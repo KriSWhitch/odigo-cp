@@ -13,16 +13,18 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <!--    Swiper     -->
     <link rel="stylesheet" href="css/swiper.min.css">
+    <!--   Header CSS    -->
+    <link rel="stylesheet" href="css/header.css">
     <!--   Main CSS    -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     <a id="back2Top" href="#">&#10148;</a>
-    <div class="hero">
-        <header class="header">
+    <div class="hero" id="hero">
+        <header class="header" id="header">
             <div class="wrapper">
-                <img src="img/odigo-logo.svg" alt="odigo" class="site-logo">
+                <a href="#hero" class="header-general-link"><img src="img/odigo-logo.svg" alt="odigo" class="site-logo"></a>
                 <div class="m-menu">
                     <ul class="navigation" id="header-navigation">
                         <li class="navigation-link">
@@ -77,7 +79,6 @@
                         <div class="card-information">
                             <h3 class="benefits-card-title">Welcome to Odigo!</h3>
                             <p class="benefits-card-subtitle">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
-                            <a href="#" class="benefits-card-link">Learn More</a>
                         </div>
                     </div>
                     <div class="benefits-card">
@@ -85,7 +86,6 @@
                         <div class="card-information">
                             <h3 class="benefits-card-title">Your Personal Japan Guide</h3>
                             <p class="benefits-card-subtitle">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
-                            <a href="#" class="benefits-card-link">Learn More</a>
                         </div>
                     </div>
                     <div class="benefits-card">
@@ -93,7 +93,6 @@
                         <div class="card-information">
                             <h3 class="benefits-card-title">Promoting Local Businesses</h3>
                             <p class="benefits-card-subtitle">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
-                            <a href="#" class="benefits-card-link">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -190,7 +189,7 @@
             <div class="footer-link-block">
                 <h3>Company</h3>
                 <ul>
-                    <li><a href="">About</a></li>
+                    <li><a href="pages/about.html">About</a></li>
                     <li><a href="">Team</a></li>
                     <li><a href="">Careers</a></li>
                     <li><a href="">Privacy Policy</a></li>

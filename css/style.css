@@ -61,93 +61,6 @@ body {
     position: relative;
 }
 
-.header {
-    width: 100%;
-    position: fixed;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    margin-bottom: 66px;
-    z-index: 100;
-    -webkit-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
-}
-
-.header .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-active {
-    background-color: #0E1D28;
-}
-
-.header a {
-    opacity: 0.8;
-}
-
-.header a:hover {
-    opacity: 1;
-    text-shadow:0 0 5px rgb(255, 255, 255);
-}
-
-.site-logo {
-    margin-right: auto;
-    margin-left: 100px;
-}
-
-.navigation {
-    display: flex;
-}
-
-.navigation-link {
-    list-style: none;
-    margin-right: 82px;
-}
-
-.navigation-link:last-child{
-    margin-right: 100px;
-}
-
-.navigation-link a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.m-menu {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-grow: 1;
-    z-index: 100;
-}
-
-.mobile-button {
-    display: none;
-}
-
-.m-menu-button {
-    padding: 5px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-line {
-    display: block;
-    height: 2px;
-    background-color: #fff;
-    width: 16px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    border-radius: 40px;
-
-}
-
 .support {
     padding-top: 120px;
     padding-bottom: 150px;
@@ -265,19 +178,6 @@ body {
     color: #000000;
     max-width: 317px;
     margin-bottom: 39px;
-}
-
-.benefits-card-link {
-    font-size: 16px;
-    line-height: 24px;
-    color: #006DFE;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.benefits-card-link::after {
-    content: url(../img/arrow.svg);
-    margin-left: 26px;
 }
 
 .inspiration-header {
@@ -749,6 +649,11 @@ body {
         max-width: 100%;
     }
 
+    .header-general-link {
+        margin-left: 50px;
+        margin-right: auto;
+    }
+
     .navigation {
         margin-top: 20%;
         flex-wrap: wrap;
@@ -971,7 +876,7 @@ body {
 
 
 @media ( max-width:380px ) {
-    .site-logo {
+    .header-general-link {
         margin-left: 30px;
         margin-right: auto;
     }

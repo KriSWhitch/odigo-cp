@@ -1,0 +1,251 @@
+.wrapper {
+    max-width: 1262px;
+    margin: auto;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-bottom: 66px;
+    z-index: 100;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-active {
+    background-color: #0E1D28;
+}
+
+.navigation-link {
+    opacity: 0.8;
+}
+
+.navigation-link:hover {
+    opacity: 1;
+    text-shadow:0 0 5px rgb(255, 255, 255);
+}
+
+.site-logo {
+    margin-right: auto;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-link {
+    list-style: none;
+    margin-right: 82px;
+}
+
+.navigation-link:last-child{
+    margin-right: 100px;
+}
+
+.navigation-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.m-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    z-index: 100;
+}
+
+.mobile-button {
+    display: none;
+}
+
+.m-menu-button {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-line {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    width: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 40px;
+
+}
+
+@media (max-width:1280px) {
+    .wrapper {
+        max-width: 960px;
+    }
+
+}
+
+@media (max-width:1020px) {
+    .wrapper {
+        max-width: 820px;
+    }
+
+}
+
+@media (max-width:860px) {
+
+    .hero {
+        height: 100%;
+    }
+
+    .mobile-button {
+        display: flex;
+        margin-right: 100px;
+        z-index: 500;
+    }
+
+    .m-menu {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: #0E1D28;
+    }
+
+
+
+    .m-menu.active {
+        display: flex;
+    }
+
+    
+
+    .m-menu-button.active .menu-line:nth-child(1){
+        transform: rotate(45deg) translate(2.5px, 4.5px);
+        -webkit-transform: rotate(45deg) translate(2.5px, 4.5px);
+    }
+
+    .m-menu-button.active .menu-line:nth-child(2){
+        background: rgba(111,111,111,.0);
+    }
+
+    .m-menu-button.active .menu-line:nth-child(3){
+        transform: rotate(-45deg) translate(2.5px, -4.5px);
+        -webkit-transform: rotate(-45deg) translate(2.5px, -4.5px);
+     }
+
+     .m-menu-button.active {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .wrapper {
+        max-width: 100%;
+    }
+
+    .header-general-link {
+        margin-left: 50px;
+        margin-right: auto;
+    }
+
+    .navigation {
+        margin-top: 20%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation-link {
+        margin: auto;
+        margin-bottom: 20px;
+        flex-basis: 100%;
+        margin-right: 10px;
+    }
+
+    .navigation-link:last-child {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .navigation-link a {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    
+}
+
+
+@media ( max-width:580px ) {
+
+}
+
+
+@media ( max-width:380px ) {
+    .header-general-link {
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    .mobile-button {
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .navigation-link {
+        display: block;
+        flex-basis: auto;
+        margin-bottom: 10px;
+    }
+
+    .navigation-link a {
+        font-size: 14px;
+    }
+
+    .navigation-link:last-child {
+        margin-bottom: 0;
+    }
+
+
+}
+
+
+@media screen and (max-height: 400px){
+    .m-menu {
+        flex-direction: row;
+    }
+
+    .navigation {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .navigation-link {
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+
+}
