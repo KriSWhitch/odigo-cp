@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     // Mobile Menu
     const mMenuBtn = $(".m-menu-button");
     const mMenu = $(".m-menu");
@@ -17,15 +18,28 @@ $(document).ready(function () {
         $(this).toggleClass("active");
     });
 
+    /*Fixed Header*/
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        
+        if (height > 50) {
+            $('.header').addClass("header-active");
+        } else {
+            $('.header').removeClass("header-active");
+        }
+    });
+
     /* To the top */
     $(window).scroll(function() {
         var height = $(window).scrollTop();
+
         if (height > 100 && height < 5800) {
             $('#back2Top').fadeIn();
         } else {
             $('#back2Top').fadeOut();
         }
     });
+
     $(document).ready(function() {
         $("#back2Top").click(function(event) {
             event.preventDefault();
