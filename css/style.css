@@ -68,6 +68,15 @@ body {
     padding-bottom: 56px;
 }
 
+.header a {
+    opacity: 0.8;
+}
+
+.header a:hover {
+    opacity: 1;
+    text-shadow:0 0 5px rgb(255, 255, 255);
+}
+
 .site-logo {
     margin-right: auto;
     margin-left: 100px;
@@ -505,6 +514,7 @@ body {
     color: #FFFFFF;
     padding: 12px 19px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .odigo-video {
@@ -527,6 +537,15 @@ body {
     background: #0E1D28;
     display: flex;
     height: 370px;
+}
+
+.footer a {
+    opacity: 0.8;
+}
+
+.footer a:hover {
+    opacity: 1;
+    text-shadow:0 0 5px rgb(255, 255, 255);
 }
 
 .footer-logo {
@@ -706,7 +725,7 @@ body {
      }
 
      .m-menu-button.active {
-        position: absolute;
+        position: fixed;
         top: 20px;
         right: 20px;
     }
@@ -723,9 +742,10 @@ body {
     }
 
     .navigation-link {
+        margin: auto;
         margin-bottom: 20px;
-        flex-basis: 50%;
-        margin-right: 0;
+        flex-basis: 100%;
+        margin-right: 10px;
     }
 
     .navigation-link:last-child {
