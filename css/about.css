@@ -100,29 +100,90 @@ body {
 
 
 
-@media (max-width:1280px) {
+@media (max-width:1400px) {
+    .website-img {
+        width: 540px;
+        height: 360px;
+    }
 
+    .website-container {
+        padding: 96px 10px;
+    }
+
+    .website hr {
+        margin-bottom: 40px;
+    }
+
+    .website-subtitle {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width:1020px) {
+    .about {
+        padding-top: 142px;
+    }
+
+    .about-title {
+        margin-bottom: 30px;
+    }
+
+    .about-subtitle {
+        margin-bottom: 40px;
+    }
+
+    .website-container {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .website-left-side {
+        width: 100%;
+    }
+
+    .website-right-side {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 48px;
+    }
+
+    .website-right-side {
+        order: -1;
+    }
+
+    .website-img {
+        width: 700px;
+        height: 467px;
+    }
+
+
 
 }
 
-@media (max-width:860px) {
+@media (max-width:770px) {
+    .website-img {
+        width: 520px;
+        height: 347px;
+    }
+}
 
+@media (max-width: 580px) {
+    .website-img {
+        width: 100%;
+        height: 300px;
+    }
 }
 
 
-@media ( max-width:580px ) {
-
+@media (max-width: 440px) {
+    .website-img {
+        height: 230px;
+    }
 }
 
-
-@media ( max-width:380px ) {
-
-}
-
-
-@media screen and (max-height: 400px){
-
+@media (max-width: 340px) {
+    .website-img {
+        height: 180px;
+    }
 }
