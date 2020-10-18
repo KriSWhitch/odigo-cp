@@ -402,6 +402,7 @@ body {
     padding: 12px 19px;
     text-transform: uppercase;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .odigo-video {

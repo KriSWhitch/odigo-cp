@@ -1,0 +1,49 @@
+*:focus {
+    outline: none; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.header {
+    background-color: #0E1D28;
+}
+
+.terms-wrapper {
+    padding: 156px 15px 70px 15px;
+}
+
+.terms-wrapper ul {
+    /* убираем стандартную нумерацию */
+    list-style: none; 
+}
+
+.terms-wrapper li {
+    font-size: 16px;
+    line-height: 1.85714286em;
+    margin: 20px 0;
+    color: #666666;
+}
+
+.term {
+    font-size: 50px;
+    margin-bottom: 75px;
+}
+
+.term-li-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.term-li-subtitle{
+    color: black;
+    font-weight: bold;
+}
