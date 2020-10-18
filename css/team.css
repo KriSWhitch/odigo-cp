@@ -1,0 +1,161 @@
+*:focus {
+    outline: none; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    background-color: #0E1D28;
+}
+
+.team-intro {
+    padding-top: 156px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.team-title {
+    color: #102746;
+    margin-bottom: 56px;
+    letter-spacing: 3px;
+    font-size: 66px;
+    text-transform: uppercase;
+}
+
+.team-subtitle {
+    font-size: 33px;
+    margin-bottom: 64px;
+    line-height: 1.5;
+}
+
+.team-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card {
+    display: flex;
+}
+
+.card-left-side {
+    width: 50%;
+}
+
+.card-right-side {
+    width: 50%;
+}
+
+.card-info {
+    background-color: #252525;
+    color: #fff;
+    padding: 104px 150px;
+}
+
+.card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-title {
+    font-size: 66px;
+    margin-bottom: 40px;
+    line-height: 1.32em;
+    max-width: 460px;
+}
+
+.card-description {
+    font-size: 19px;
+    line-height: 1.68em;
+    max-width: 460px;
+}
+
+/* Card Photo's */
+
+.team-card:nth-child(1) .card-image { background-image: url(../img/our-team/1.jpg); }
+.team-card:nth-child(2) .card-image { background-image: url(../img/our-team/2.jpg); }
+.team-card:nth-child(3) .card-image { background-image: url(../img/our-team/3.jpg); }
+.team-card:nth-child(4) .card-image { background-image: url(../img/our-team/4.jpg); }
+.team-card:nth-child(5) .card-image { background-image: url(../img/our-team/5.jpg); }
+.team-card:nth-child(6) .card-image { background-image: url(../img/our-team/6.jpg); }
+.team-card:nth-child(7) .card-image { background-image: url(../img/our-team/7.jpg); }
+.team-card:nth-child(8) .card-image { background-image: url(../img/our-team/8.jpg); }
+.team-card:nth-child(9) .card-image { background-image: url(../img/our-team/9.jpg); }
+.team-card:nth-child(10) .card-image { background-image: url(../img/our-team/10.jpg); }
+.team-card:nth-child(11) .card-image { background-image: url(../img/our-team/11.jpg); }
+
+
+@media (max-width: 1020px) {
+
+    .card-info:nth-child(1) {
+        padding: 90px 15px 90px 61px;
+    }
+
+    .card-info:nth-child(2) {
+        padding: 90px 61px 90px 15px;
+    }
+
+    .team-title {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .team-subtitle {
+        font-size: 30px;
+        margin-bottom: 23px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .card-info {
+        padding: 71px 15px;
+    }
+    
+    .card-info:nth-child(1) {
+        order: 1;
+    }
+
+    .card-image:nth-child(2) {
+        order: 0;
+    }
+
+    .team-card {
+        flex-direction: column;
+    }
+
+    .card-left-side {
+        width: 100%;
+    }
+    
+    .card-right-side {
+        width: 100%;
+    }
+
+    .card-image {
+        height: 327px;
+    }
+
+    .card-title {
+        font-size: 30px;
+        margin-bottom: 17px;
+    }
+    
+    .card-description {
+        font-size: 17px;
+    }
+}
+
