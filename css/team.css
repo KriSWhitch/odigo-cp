@@ -122,7 +122,7 @@ body {
 @media (max-width: 860px) {
 
     .card-info {
-        padding: 71px 15px;
+        padding: 90px 15px 90px 61px !important;
     }
     
     .card-info:nth-child(1) {
@@ -159,3 +159,8 @@ body {
     }
 }
 
+@media ( max-width: 600px ) {
+    .card-info {
+        padding: 71px 15px !important;
+    }
+}
