@@ -746,6 +746,10 @@ body {
         margin-right: auto;
     }
 
+    .footer-link-block ul li p {
+        font-size: 12px;
+    }
+
 }
 
 
