@@ -90,7 +90,7 @@
         font-size: 16px;
     }
 
-    .footer-link-block ul li a {
+    .footer-link-block ul li a, .footer-link-block ul li p {
         font-size: 12px;
     }
 
