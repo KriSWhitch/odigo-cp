@@ -1,5 +1,14 @@
 $(document).ready(function () {
     
+    // XML Title
+    var xml = "<?xml version = '1.0'?>" +
+              "<head>Odigo Travel</head>";
+    var parser = new DOMParser();
+    var xmlDoc = parser.parseFromString(xml, "text/xml");
+    var names = xmlDoc.getElementsByTagName("head");
+    var title = document.getElementsByTagName("title");
+    title[0].innerHTML = names[0].innerHTML;
+
     // Mobile Menu
     const mMenuBtn = $(".m-menu-button");
     const mMenu = $(".m-menu");
